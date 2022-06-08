@@ -107,6 +107,7 @@ ol {
 
 .header-list-name:not(:last-child) {
   margin-right: 50px;
+  position: relative;
 }
 
 .section {
@@ -160,19 +161,26 @@ ol {
   margin-bottom: 30px;
 }
 
-.header-item-studia {
+.header-item-studia,
+.header-item-portfolio {
   color: var(--accent-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
 
-  left: 0;
-  bottom: -32px;
+.header-item-studia::after,
+.header-item-portfolio::after {
+  content: "";
+  position: absolute;
+  display: block;
+  text-decoration: none;
   width: 100%;
   height: 4px;
-  border-radius: 2px;
-  text-decoration: none;
+  left: 0;
+  bottom: -28px;
+  background-color: #2196f3;
 }
 
 .header-item {
@@ -192,7 +200,7 @@ ol {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -32px;
+  bottom: -28px;
   display: block;
   width: 100%;
   height: 4px;
@@ -393,12 +401,16 @@ main {
   height: 70px;
   justify-content: center;
   background-color: rgba(47, 48, 58, 0.8);
+  bottom: 1%;
 }
 
 .icon-text {
   position: absolute;
   width: 205px;
   height: 16px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
   font-family: inherit;
   font-weight: 700;
@@ -408,7 +420,7 @@ main {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  color: #ffffff;
+  color: var(--btn-color);
 }
 
 .name-list {
