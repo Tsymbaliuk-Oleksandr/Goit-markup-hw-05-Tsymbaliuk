@@ -109,20 +109,6 @@ ol {
   margin-right: 50px;
 }
 
-/* .contact-icon-mail {
-  width: 16px;
-  height: 14px;
-  margin-right: 10px;
-  transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contact-icon-tel {
-  width: 14px;
-  height: 16px;
-  margin-right: 10px;
-  transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-} */
-
 .section {
   padding: 94px 0;
 }
@@ -223,8 +209,9 @@ a,
   width: 16px;
   height: 14px;
   margin-right: 10px;
-  /* color: #757575;
-  fill: #757575; */
+  color: var(--contacts-color);
+  fill: #757575;
+  cursor: pointer;
   transition: fill 5000ms cubic-bezier(0.4, 0, 0.2, 1),
     color 5000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -233,8 +220,9 @@ a,
   width: 14px;
   height: 16px;
   margin-right: 10px;
-  /* color: #757575;
-  fill: #757575; */
+  color: var(--contacts-color);
+  fill: #757575;
+  cursor: pointer;
   transition: fill 5000ms cubic-bezier(0.4, 0, 0.2, 1),
     color 5000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
