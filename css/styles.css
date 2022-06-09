@@ -123,23 +123,6 @@ ol {
   padding-top: 0;
   padding-bottom: 94px;
 }
-/* 
-.portfolio-button,
-.portfolio-button {
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-
-  cursor: pointer;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} */
-
-/* .portfolio-button:hover,
-.portfolio-button:focus {
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-} */
 
 .portfolio-button:not(:last-child) {
   margin-right: 8px;
@@ -161,7 +144,7 @@ ol {
   margin-bottom: 30px;
 }
 
-.portfolio-li:hover .portfolio-icon-text {
+.portfolio-overlay:hover .portfolio-icon-text {
   transform: translateY(0);
 }
 
@@ -488,6 +471,9 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .internet-item-icon {
@@ -500,9 +486,6 @@ main {
 .internet-link:hover,
 .internet-link:focus {
   background-color: #2196f3;
-
-  cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .internet-link:hover .internet-item-icon,
@@ -718,8 +701,6 @@ address {
   padding-right: 22px;
   padding-bottom: 6px;
   padding-left: 22px;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 
   cursor: pointer;
@@ -732,6 +713,8 @@ address {
 .portfolio-item:focus {
   color: var(--btn-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-button-list {
@@ -849,4 +832,8 @@ address {
   position: absolute;
   top: 10px;
   right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
 }
